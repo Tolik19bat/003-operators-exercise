@@ -32,4 +32,5 @@ $fio = mb_substr($lastName, 0, 1) . mb_substr($firstName, 0, 1) . mb_substr($mid
 echo "Полное имя: '$fullName'\n";
 echo "Фамилия и инициалы: '$surnameAndInitials'\n";
 echo "Аббревиатура: '$fio'\n";
-?>
+
+
