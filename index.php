@@ -26,12 +26,10 @@ $fullName = $lastName . ' ' . $firstName . ' ' . $middleName;
 $surnameAndInitials = $lastName . ' ' . mb_substr($firstName, 0, 1) . '.' . mb_substr($middleName, 0, 1) . '.';
 
 // Объявляем переменную $fio и объединяем первые буквы фамилии, имени и отчества
-$fio = mb_substr($lastName, 0, 1) . mb_substr($firstName, 0, 1) . mb_substr($middleName, 0, 1);
-
+$fio = mb_substr($lastName, 0, 1) . '.' . mb_substr($firstName, 0, 1) . '.' . mb_substr($middleName, 0, 1) . '.';
 
 // Выводим результаты на экран
 echo "Полное имя: '$fullName'\n";
 echo "Фамилия и инициалы: '$surnameAndInitials'\n";
 echo "Аббревиатура: '$fio'\n";
-
-
+?>
